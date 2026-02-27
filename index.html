@@ -6,7 +6,7 @@
     <title>GenomaLumina | Em Breve</title>
     <style>
         body {
-            background-color: #050B14; /* O azul do seu logo */
+            background-color: #050B14; /* Azul profundo da marca */
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -16,34 +16,61 @@
             height: 100vh;
             margin: 0;
             text-align: center;
+            overflow: hidden;
         }
+
         img {
             max-width: 300px;
+            height: auto;
             margin-bottom: 20px;
+            /* Suaviza a transição se a imagem tiver bordas */
+            border-radius: 8px; 
         }
+
         h1 {
             font-weight: 300;
             font-size: 1.5rem;
             color: #F8F9FA;
             margin: 10px 20px;
+            max-width: 600px;
+            line-height: 1.4;
         }
+
         .highlight {
-            color: #FFC107; /* O dourado do seu logo */
+            color: #FFC107; /* Dourado do logo */
             font-weight: bold;
         }
+
         .status {
             margin-top: 40px;
             letter-spacing: 5px;
             font-size: 0.9rem;
-            color: #00AEEF; /* O ciano do seu logo */
+            color: #00AEEF; /* Ciano do logo */
+            font-weight: bold;
+            animation: pulsar 2.5s infinite ease-in-out;
+        }
+
+        /* Efeito de brilho suave no texto EM BREVE */
+        @keyframes pulsar {
+            0% { opacity: 0.3; text-shadow: 0 0 0px #00AEEF; }
+            50% { opacity: 1; text-shadow: 0 0 10px #00AEEF; }
+            100% { opacity: 0.3; text-shadow: 0 0 0px #00AEEF; }
+        }
+
+        /* Ajuste para telas de celular */
+        @media (max-width: 480px) {
+            h1 { font-size: 1.2rem; }
+            img { max-width: 200px; }
         }
     </style>
 </head>
 <body>
+
     <img src="logo.jpg" alt="GenomaLumina Logo">
     
     <h1>A ciência genômica <span class="highlight">iluminando</span> o caminho para a Saúde Única.</h1>
     
     <div class="status">EM BREVE</div>
+
 </body>
 </html>
