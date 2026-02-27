@@ -6,15 +6,7 @@
     
     <title>GenomaLumina | Genômica e Saúde Única</title>
     <meta name="description" content="A GenomaLumina utiliza a ciência genômica para iluminar o caminho para a Saúde Única. Soluções inovadoras em diagnóstico e pesquisa genética.">
-    <meta name="keywords" content="genoma, genômica, saúde única, genética, diagnóstico molecular, ciência, GenomaLumina">
-    <meta name="author" content="GenomaLumina">
-
-    <meta property="og:title" content="GenomaLumina | Genômica e Saúde Única">
-    <meta property="og:description" content="A ciência genômica iluminando o caminho para a Saúde Única. Em breve um novo conceito em diagnóstico.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.genomalumina.com.br">
-    <meta property="og:image" content="https://www.genomalumina.com.br/logo.jpg">
-
+    
     <style>
         body {
             background-color: #050B14;
@@ -27,10 +19,9 @@
             height: 100vh;
             margin: 0;
             text-align: center;
-            overflow: hidden;
         }
 
-        img {
+        img.logo {
             max-width: 300px;
             height: auto;
             margin-bottom: 20px;
@@ -52,12 +43,35 @@
         }
 
         .status {
-            margin-top: 40px;
+            margin-top: 30px;
             letter-spacing: 5px;
             font-size: 0.9rem;
             color: #00AEEF;
             font-weight: bold;
             animation: pulsar 2.5s infinite ease-in-out;
+        }
+
+        /* Container das Redes Sociais */
+        .social-links {
+            margin-top: 50px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+            transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+            background-color: rgba(255,255,255,0.1);
+            color: #00AEEF;
         }
 
         @keyframes pulsar {
@@ -68,17 +82,23 @@
 
         @media (max-width: 480px) {
             h1 { font-size: 1.2rem; }
-            img { max-width: 200px; }
+            img.logo { max-width: 200px; }
+            .social-links a { display: block; margin: 10px auto; width: fit-content; }
         }
     </style>
 </head>
 <body>
 
-    <img src="logo.jpg" alt="GenomaLumina - Genômica e Saúde Única">
+    <img src="logo.jpg" alt="GenomaLumina Logo" class="logo">
     
     <h1>A ciência genômica <span class="highlight">iluminando</span> o caminho para a Saúde Única.</h1>
     
     <div class="status">EM BREVE</div>
+
+    <div class="social-links">
+        <a href="LINK_DO_SEU_INSTAGRAM" target="_blank">Instagram</a>
+        <a href="LINK_DO_SEU_LINKEDIN" target="_blank">LinkedIn</a>
+    </div>
 
 </body>
 </html>
